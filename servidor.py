@@ -4,8 +4,8 @@ import socket
 
 #HOST : loopback
 print("Iniciando O Servidor")
-HOST = '127.0.0.1'
-PORTA = int(input('Entre com a porta do servidor'))
+HOST = input('Entre com o ip do servidor ')
+PORTA = int(input('Entre com a porta do servidor '))
 
 #criação do nosso socket
 #inicialização com o tipo de endereçamento e IP e PROTOCOLO

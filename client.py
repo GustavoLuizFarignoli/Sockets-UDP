@@ -2,7 +2,7 @@
 import socket
 #FAZ ASSOCIAÇÃO AS INFOS DO SERVIDOR
 print("Iniciando Cliente")
-HOST = '127.0.0.1'
+HOST = input('Entre com o ip de host ')
 PORTA = int(input('Entre com a porta do servidor'))
 mensagem = input("mensagem: ")
 
@@ -14,6 +14,3 @@ sock.connect((HOST,PORTA))
 
 #enviar uma string de dados
 sock.send(str.encode(mensagem))
-
-#recebe do SERVIDOR
-dados = sock.recvfrom(2048)
